@@ -1,0 +1,90 @@
+@font-face {
+  font-family: Avenir;
+  font-weight: 300;
+  src: url("Avenir-Book.21abf061.ttf");
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  src: url("Avenir-Heavy.9246a2b0.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  --search-bar-input-box-color: 0 1px 8px 0 #3d4e611a;
+  --search-bar-input-box-color-hover: 0 3px 8px 0 #3d4e6133;
+  --search-bar-input-gradient: linear-gradient(180deg, #fff 0%, #f6f6f7 100%);
+  --search-bar-input-border: 1px solid #e1e7ed;
+  --search-bar-input-color: #3d4e61;
+}
+
+.search-bar {
+  margin-top: 20px;
+  position: relative;
+}
+
+.search-bar__input {
+  border: var(--search-bar-input-border);
+  background-image: url("Search.f4d21c8a.svg");
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  font-family: Avenir, sans-serif;
+}
+
+.search-bar__input-big {
+  box-shadow: var(--search-bar-input-box-color);
+  color: var(--search-bar-input-color);
+  background-position-x: 26px;
+  background-size: 19px 19px;
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21.86px;
+}
+
+.search-bar__input-big:hover {
+  box-shadow: var(--search-bar-input-box-color-hover);
+}
+
+.search-bar__input-big:focus {
+  background: url("Search.f4d21c8a.svg") no-repeat, var(--search-bar-input-gradient);
+  text-shadow: 1px 4px 4px #00000040;
+  background-position: 26px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px #00000040;
+}
+
+.search-bar__input-small {
+  color: var(--search-bar-input-color);
+  text-align: left;
+  box-shadow: var(--search-bar-input-box-color);
+  background-position-x: 13px;
+  background-size: 11px;
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.12px;
+}
+
+.search-bar__input-small:hover {
+  box-shadow: var(--search-bar-input-box-color-hover);
+  text-shadow: none;
+}
+
+.search-bar__input-small:focus {
+  background: url("Search.f4d21c8a.svg") no-repeat, var(--search-bar-input-gradient);
+  border: var(--search-bar-input-border);
+  background-position: 13px;
+  background-size: 11px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
